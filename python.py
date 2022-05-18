@@ -202,3 +202,122 @@
 #     narh = 10000
 # print(f"Sizga kirish {narh} summ")
 # =============================================================================
+
+# =============================================================================
+# kun = input("bogun nima kun? >>>")
+# if kun.lower() == "shanba" or kun.lower() == "yakshanba":
+#     print("Bugun dam olish kuni!")
+# else:
+#     print("Bugun ish kuni!")
+# =============================================================================
+
+# =============================================================================
+# kunn = input("bugun nima kun? >>> ")
+# harorat = float(input("Havo harorati qanday? >>> "))
+# 
+# if (kunn.lower() == 'yakshanba' or kunn.lower() == 'shanba') and harorat >= 30:
+#     print('Chomilgani ketdik!')
+# elif (kunn.lower() == 'yakshanba' or kunn.lower() == 'shanba') and harorat < 30:
+#     print('Uyda dam olamiz!')  
+# else:
+#     print('bugun ish kuni!')
+# =============================================================================
+
+# =============================================================================
+# narh = 15000
+# choy = True
+# salat = False
+# 
+# if choy and salat:
+#     narh = narh + 10000
+# elif choy or salat:
+#     narh = narh + 5000
+# print(f"jami {narh} sum")
+# =============================================================================
+
+# =============================================================================
+# narh = 15000
+# choy = True
+# salat = False
+# non = True
+# kompot = True
+# asorti = False
+# 
+# if choy:
+#     print("Mijoz choy oldi.")
+#     narh = narh + 3000
+# if salat:
+#     print("Mijoz salat oldi.")
+#     narh = narh + 5000
+# if non:
+#     print("Mijoz non oldi.")
+#     narh = narh + 2000
+# if kompot:
+#     print("Mijoz kompot oldi.")
+#     narh = narh + 5000
+# if asorti:
+#     print("Mijoz asorti oldi.")
+#     narh = narh + 15000
+# print(f"Jami {narh} sum")
+# =============================================================================
+    
+# =============================================================================
+# narh = 15000
+# choy = 1
+# salat = 0
+# non = 1
+# kompot = 1
+# asorti = 1
+# 
+# if choy:
+#     print("Mijoz choy oldi.")
+#     narh = narh + 3000
+# if salat:
+#     print("Mijoz salat oldi.")
+#     narh = narh + 5000
+# if non:
+#     print("Mijoz non oldi.")
+#     narh = narh + 2000
+# if kompot:
+#     print("Mijoz kompot oldi.")
+#     narh = narh + 5000
+# if asorti:
+#     print("Mijoz asorti oldi.")
+#     narh = narh + 15000
+# print(f"Jami {narh} sum")
+# =============================================================================
+
+# =============================================================================
+# menu = ['osh' , 'qazonkabob' , 'shashlik' , 'norin' , 'somsa']
+# #'somsa' in menu #menu da somsa bormi?
+# ovqat = input("nima ovqat yeysiz> >>>")
+# if ovqat in menu:
+#     print("buyurtma qabul qilindi")
+# else:
+#     print('afsuzki bizda bunday ovqat yo\'q')
+# =============================================================================
+
+# =============================================================================
+# menu = ['osh' , 'qazonkabob' , 'shashlik' , 'norin' , 'somsa']
+# #'somsa' not in menu #menu da somsa yoqmi?
+# ovqat = input("nima ovqat yeysiz> >>>")
+# if ovqat not in menu:
+#      print('afsuzki bizda bunday ovqat yo\'q')
+# else:
+#      print("buyurtma qabul qilindi")
+# =============================================================================
+# 2 ta ozgaruvchilarni solishtirish
+# =============================================================================
+# menu = ['osh' , 'qazonkabob' , 'shashlik' , 'norin' , 'somsa']
+# buyurtmalar = ['osh' , 'somsa' , 'manti' , 'shashlik']
+# if buyurtmalar:
+#     print(f"buyurtmalarda {len(buyurtmalar)} taom bor")
+#     for taom in buyurtmalar:
+#         if taom in menu:
+#             print(f"menu da {taom} bor")
+#         else:
+#             print(f"Kechirasiz menu da {taom} yoq")
+# else:
+#     print("ro'yxat bo'sh")
+# =============================================================================
+
