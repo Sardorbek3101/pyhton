@@ -321,3 +321,39 @@
 #     print("ro'yxat bo'sh")
 # =============================================================================
 
+# =============================================================================
+# car = {'model' : 'Ferrari' , 'color' : 'red'}
+# print(car['model'])
+# print(car['color'])
+# =============================================================================
+
+# =============================================================================
+# en_uz = {'apple' : 'olma' , "apricot" : "o'rik" , 'banana' : 'banan' }
+# print(en_uz['banana'])
+# print(en_uz)
+# =============================================================================
+
+# =============================================================================
+# student = {'name' : 'olimjonov sardorbek' , 'yil' : '2006' , 'yosh' : '16'}
+# print(f"{student['name'].title()} , {student['yil']} yil da tugulgan , hozir {student['yosh']}")
+# 
+# student['kurs'] = 1
+# student['fakulted'] = 'informatika'
+# student['name'] = 'olimjonov sardor'
+# print(student)
+# del student['yosh']
+# print(student)
+# =============================================================================
+
+# =============================================================================
+# telefonlar = {
+#      'ali' : 'iphone x',
+#      'vali' : 'iphone 11',
+#      'gani' : 'iphone 12 pro',
+#      'gayrat' : 'iphone 13 pro max',
+#      'gari' : 'samsung s21 ultra'    
+#     }
+# print(telefonlar)
+# 
+# print(telefonlar.get('username' , 'bunday user mavjut emas')) #bu informasiya berishda ishlatilinadi
+# =============================================================================
