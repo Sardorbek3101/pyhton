@@ -357,3 +357,96 @@
 # 
 # print(telefonlar.get('username' , 'bunday user mavjut emas')) #bu informasiya berishda ishlatilinadi
 # =============================================================================
+
+# =============================================================================
+# student = {'name' : 'olimjonov sardorbek' , 'yil' : '2006' , 'yosh' : '16'}
+# print(student.items())
+# for kalit , qiymat in student.items():
+#     print(f"kalit = {kalit}")
+#     print(f"qiymat = {qiymat}\n")
+# =============================================================================
+
+# =============================================================================
+# telefonlar = {
+#      'ali' : 'iphone x',
+#      'vali' : 'iphone 11',
+#      'gani' : 'iphone 12 pro',
+#      'gayrat' : 'iphone 13 pro max',
+#      'gari' : 'samsung s21 ultra'    
+#     }
+# for k , q in telefonlar.items():
+#     print(f"{k.title()}ning telefoni {q}")
+# =============================================================================
+
+# =============================================================================
+# telefonlar = {
+#      'ali' : 'iphone x',
+#      'vali' : 'iphone 11',
+#      'gani' : 'iphone 12 pro',
+#      'gayrat' : 'iphone 13 pro max',
+#      'gari' : 'samsung s21 ultra'    
+#     }
+# print(telefonlar)
+# print(telefonlar.keys()) #kalit so'zlarni ajratib olish
+# for tel in telefonlar:
+#     print(tel.title())
+# =============================================================================
+
+# =============================================================================
+# mahsulotlar = {
+#     'olma' : 10000,
+#     'anor' : 20000,
+#     'uzum' : 40000,
+#     'anjir' : 25000,
+#     'shaftoli' : 30000
+#     }
+# bozorlik = ['anor' , 'uzum' , 'non' , 'baliq']
+# 
+# for mahsulot in mahsulotlar:
+#     if mahsulot in bozorlik:
+#         print(f"{mahsulot.title()} {mahsulotlar[mahsulot]}")
+# 
+# for buyum in bozorlik:
+#     if buyum not in mahsulotlar:
+#         print(f"Iltimos do'konizga {buyum} ham olip keling")
+# 
+# for mahsulot in sorted(mahsulotlar):
+#     print(f"\n{mahsulot.title()}")
+# =============================================================================
+
+# =============================================================================
+# telefonlar = {
+#      'ali' : 'iphone x',
+#      'vali' : 'iphone 11',
+#      'gani' : 'iphone 12 pro',
+#      'gayrat' : 'iphone 13 pro max',
+#      'gari' : 'samsung s21 ultra'    
+#     }
+# #print(telefonlar.values()) #telefonlar ro'yxatini qiymatlari
+# 
+# for telefon in telefonlar.values():
+#     print(telefon.title())
+# =============================================================================
+    
+# =============================================================================
+# telefonlar = {
+#      'ali' : 'iphone x',
+#      'vali' : 'iphone 11',
+#      'gani' : 'iphone 12 pro',
+#      'gayrat' : 'iphone 13 pro max',
+#      'gari' : 'samsung s21 ultra', 
+#      'tohir' : 'iphone x',
+#      'shodi' : 'iphone x',
+#      'tesha' : 'iphone 13 pro max',
+#      'ketmon' : 'iphone 13 pro max'
+#     }
+# #set() - qayta qayta kelayotkan qiymatlarni 1 tadann qoldiradi
+# print("Foydalanuvchilar quyidagi telefonlarni ishlatadilar")
+# for telefon in set(telefonlar.values()):
+#     print(telefon.title())
+# =============================================================================
+
+# =============================================================================
+# toys = {'ball' , 'car' , 'lamp' , 'ball' , 'bear' , 'car'} #type - set qaytarilgan qiymatni bittasini korsatadi
+# print(toys)
+# =============================================================================
