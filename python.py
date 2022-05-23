@@ -572,3 +572,94 @@
 #         print(til.upper())
 # 
 # =============================================================================
+#primer
+# =============================================================================
+# primer = int(input('6*6 = ?'))
+# if primer == 6 * 6:
+#     print('velkome')
+# else:
+#     print('error')
+# 
+# =============================================================================
+
+# =============================================================================
+# ism = input('ismingiz nima?')
+# savol = f"Salom {ism.title()} yoshingiz nechida?"
+# yosh = input(savol)
+# yosh = int(yosh)
+# height = input("Boyingiz nechida?")
+# height = float(height)
+# =============================================================================
+
+# =============================================================================
+# son = 1
+# while son <= 5:
+#     print(son , end = ' ')
+#     son += 1
+# print('dastur tugadi')
+# =============================================================================
+
+# =============================================================================
+# print('Kiritilgan sonni kvadratini chiqaruvchi dastur !')
+# savol = 'Istalgan son kiriting '
+# savol += "(Dasturni to'xtatish uchun 'exit' deb yozing) :"
+# qiymat = ''
+# while  qiymat != 'exit':
+#     qiymat = input(savol)
+#     if qiymat != 'exit':
+#         print(float(qiymat) ** 2)
+# print('Dastur tugadi.')
+# =============================================================================
+
+# =============================================================================
+# print('Kiritilgan sonni kvadratini chiqaruvchi dastur !')
+# savol = 'Istalgan son kiriting '
+# savol += "(Dasturni to'xtatish uchun 'exit' deb yozing) :"
+# qiymat = ''
+# ishora = True
+# while ishora:
+#     qiymat = input(savol)
+#     if qiymat == 'exit':
+#         ishora = False
+#     else:
+#         print(float(qiymat) ** 2)
+# print('Dastur tugadi.')
+# =============================================================================
+
+# =============================================================================
+# print('Kiritilgan sonni kvadratini chiqaruvchi dastur !')
+# savol = 'Istalgan son kiriting '
+# savol += "(Dasturni to'xtatish uchun 'exit' deb yozing) :"
+# qiymat = ''
+# while True: #abadiy tsikl
+#     qiymat = input(savol)
+#     if qiymat == 'exit':
+#         break #tsikilni to'xtatish
+#     else:
+#         print(float(qiymat) ** 2)
+# print('Dastur tugadi.')
+# =============================================================================
+
+# =============================================================================
+# sonlar = list(range(1,11))
+# for son in sonlar:
+#     if son == 5:
+#         break #toxtatish
+#     print(f"{son} ning kvadrati {son ** 2} ga teng")
+# =============================================================================
+    
+# =============================================================================
+# sonlar = list(range(1,11))
+# for son in sonlar:
+#     if son == 5:
+#         continue #kodni boshidan davom etish
+#     print(f"{son} ning kvadrati {son ** 2} ga teng")
+# =============================================================================
+
+son = 0
+while son < 10:
+    son += 1
+    if son %2 != 0:
+        continue
+    else:
+        print(son)
