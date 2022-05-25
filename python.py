@@ -656,10 +656,113 @@
 #     print(f"{son} ning kvadrati {son ** 2} ga teng")
 # =============================================================================
 
-son = 0
-while son < 10:
-    son += 1
-    if son %2 != 0:
-        continue
-    else:
-        print(son)
+# =============================================================================
+# son = 0
+# while son < 10:
+#     son += 1
+#     if son %2 != 0:
+#         continue
+#     else:
+#         print(son)
+# =============================================================================
+
+# =============================================================================
+# print("Yaqin do'stlaringiz ro'yxatini tuzamiz.")
+# ismlar = []
+# n = 1
+# 
+# while True:
+#     savol = f"{n} do'stingizni izmini kiriting :"
+#     ism = input(savol)
+#     ismlar.append(ism)
+#     n += 1
+#     takrorlash = input("yana ism qoshasizmi ? (ha/yoq')")
+#     if takrorlash.lower() != 'ha':
+#         break
+# 
+# print("Do'stlaringiz ro'yhati")
+# for ismm in ismlar:
+#     print(ismm.title())
+# =============================================================================
+    
+# =============================================================================
+# dostlar = {}
+# ishora = True
+# 
+# while ishora:
+#     ism = input("Do'stingizni ismini kiriting : ")
+#     yosh = input(f"{ism.title()}ning yoshi nechida ? ")
+#     dostlar[ism] = int(yosh)
+#     
+#     javob = input("Yana malumot qo'shasizmi? (ha/yo'q) ")
+#     if javob == "yo'q":
+#         ishora = False
+#     
+# for ism , yosh in dostlar.items():
+#     print(f"{ism.title()} {yosh} yoshda")
+# =============================================================================
+
+# =============================================================================
+# cars = ['lacetti' , 'nexia' , 'toyota' , 'nexia' , 'audi' , 'malibu' , 'nexia']
+# 
+# while 'nexia' in cars :
+#     cars.remove('nexia')
+# print(cars)
+# =============================================================================
+
+# =============================================================================
+# talabalar = ['hasan' , 'husan' , 'ali' , 'vali' , 'gayrat']
+# baholangan_talabalar = {}
+# while talabalar:
+#     talaba = talabalar.pop()
+#     baho = input(f"{talaba.title()}ning bahosini kiriting : ")
+#     print(f"{talaba.title()} baholandi")
+#     baholangan_talabalar[talaba.title()] = int(baho)
+# print(talabalar)
+# print(baholangan_talabalar)
+# =============================================================================
+
+#FUNCTION
+# =============================================================================
+# def salom_ber():
+#     """salom beruvchi funktsiya""" #DOCSTRING - funktsiya haqida malumot  berish
+#     print("Asalom Alaykum")
+# 
+# #salom_ber()
+# 
+# def kutib_ol(ism):
+#     """Foydalanuvchining ismini qabul qilib ,
+#     unga salom beruvchi funktsiya"""
+#     print(f"Assalomu alaykum , hurmatli {ism.title()}")
+# 
+# kutib_ol('Sardorbek')
+# 
+# print(kutib_ol.__doc__) #Funktsiya haqida malumot olish
+# print(print.__doc__)
+# =============================================================================
+
+# =============================================================================
+# def toliq_ism(ism , familiya):
+#     """Foydalanuvchi ism va familyasini jamlab chiqaruvchi funktsiya"""
+#     print(f"\nFoydalanuvchi ismi : {ism.title()}\n"
+#           f"Foydalanuvchi familyasi : {familiya.title()}")
+# 
+# toliq_ism('Sardorbek', 'Olimjonov')
+# toliq_ism(familiya = 'Kamolov',ism = 'Ruslan')
+# 
+# def yoshni_hisobla(ism , t_yil):
+#     """Foydalanuvchi yoshini hisoblaydigan dastur"""
+#     print(f"{ism.title()} {2022 - t_yil} yoshda")
+#     
+# yoshni_hisobla('Sardorbek', 2006)
+# yoshni_hisobla(t_yil=2006, ism = 'Ruslan')
+# =============================================================================
+
+# =============================================================================
+# def yosh_hisobla(tugulgan_yil , joriy_yil = 2022):
+#     """Foydalanuvchi tugulgan yilidan uning yoshini hisoblaydi"""
+#     print(f"Siz {joriy_yil - tugulgan_yil} yosh da siz")
+# 
+# yosh_hisobla(2006 , 2023)
+# yosh_hisobla(2006)
+# =============================================================================
