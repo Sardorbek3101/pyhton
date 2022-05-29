@@ -766,3 +766,143 @@
 # yosh_hisobla(2006 , 2023)
 # yosh_hisobla(2006)
 # =============================================================================
+
+# =============================================================================
+# def toliq_ism_yasa(ism , familiya):
+#     """to'liq ism qaytaruvchi funktsiya"""
+#     toliq_ism = f"{ism} {familiya}"
+#     return toliq_ism
+# 
+# talaba = toliq_ism_yasa('sardor', 'olimjonov') #funktsiya dagi qiymatni ozgaruvchiga solish
+# print(talaba)
+# =============================================================================
+
+# =============================================================================
+# def toliq_ism_yasa(ism , familiya , otasining_ismi = ''):
+#     """to'liq ism qaytaruvchi funktsiya"""  
+#     if otasining_ismi:
+#         toliq_ism = f"{ism} {otasining_ismi} {familiya}"
+#     else:
+#         toliq_ism = f"{ism} {familiya}"
+#     return toliq_ism.title()
+#     
+# talaba1 = toliq_ism_yasa('Sardorbek', 'Olimjonov')
+# talaba2 = toliq_ism_yasa('ruslan', 'kamolov' , 'rustamovich')
+# print(f"Darsga kelmagan talabalar : {talaba1} va {talaba2}")
+# =============================================================================
+
+# =============================================================================
+# def avto_info(kompania , model , rangi , korobka , yili , narhi = None):
+#     avto = {'kompania' : kompania ,
+#           'model' : model,
+#           'rangi' : rangi,
+#           'korobka' : korobka,
+#           'yil' : yili,
+#           'narh' : narhi
+#           }
+#     return avto
+# 
+# avto1 = avto_info('Gm','Malibu', 'Qora', 'Avtomat', '2018')
+# avto2 = avto_info('Gm', 'Gentra', 'Oq', 'Mexanika', '2016' , 15000)
+# 
+# avtolar = [avto1 , avto2]
+# #print(avtolar[1]['model'])
+# print("Onlayn bozorda mavjut avtomashinalar : ")
+# for avto in avtolar:
+#     if avto['narh']:
+#         narh = avto['narh']
+#     else:
+#         narh = "noma'lum"
+#     print(f"{avto['rangi']} {avto['model']} narhi : {narh}")
+# =============================================================================
+
+# =============================================================================
+# def oraliq(min , max , qadam = 1):
+#     sonlar = []
+#     while min < max:
+#         sonlar.append(min)
+#         if qadam:
+#             min += qadam
+#     return sonlar
+# print(oraliq(1, 21))
+# print(oraliq(0, 1010 , 10))
+# =============================================================================
+
+# =============================================================================
+# def avto_info(kompania , model , rangi , korobka , yili , narhi = None):
+#     avto = {'kompania' : kompania ,
+#           'model' : model,
+#           'rangi' : rangi,
+#           'korobka' : korobka,
+#           'yil' : yili,
+#           'narh' : narhi
+#           }
+#     return avto
+# print("Salonimizdagi atolarro'yxatini shakillantiramiz.\n")
+# avtolar=[]
+# 
+# while True:
+#     print("Quyidagi malumotlarni kiriting")
+#     kompania = input("Ishlab chiqaruvchi : ")
+#     model = input("Modeli : ")
+#     rangi = input('Rangi : ')
+#     korobka = input('Koropkasi : ')
+#     yili = input("Ishlab chiqarilgan yili : ")
+#     narhi = input("Narhi : ")
+#     
+#     avtolar.append(avto_info(kompania, model, rangi, korobka, yili , narhi))
+#     
+#     javob = input("Yana avto qo'shasizmi ? (yes/no)")
+#     if javob == 'no':
+#         break
+#     
+# print("\nSaloningizdagi avtolar : ")
+# for avto in avtolar:
+#     if avto['narh']:
+#         narh = avto['narh']
+#     else:
+#         narh = "noma'lum"
+#     print(f"{avto['rangi']} {avto['model']} narhi : {narh}")
+# =============================================================================
+
+# =============================================================================
+# def bahola(ismlar):
+#     baholar = {}
+#     while ismlar:
+#         ism = ismlar.pop()
+#         baho = input(f"Talaba {ism.title()} bahosini kiriting : ")
+#         baholar[ism] = baho
+#     return baholar
+# 
+# talabalar = ['ali' , 'vali' , 'hasan' , 'husan']
+# baholar = bahola(talabalar[:]) #[:] bu qiymatni kopiyasini olishga yordam beradi
+# print(baholar)
+# print(talabalar)
+# =============================================================================
+        #args
+# =============================================================================
+# def summa(*sonlar):
+#     yigindi = 0
+#     for son in sonlar:
+#         yigindi += son
+#     return yigindi
+# 
+# print(summa(1,2,3,4,5))
+# print(summa(15,25,85))
+# 
+# def suma(x , y , *sonlar):
+#     return x+y+sum(sonlar)
+# 
+# print(suma(1,2,5))
+# =============================================================================
+        #**kwargs
+# =============================================================================
+# def avto_info(kompaniya , model , **malumotlar):
+#     malumotlar['kompaniya'] = kompaniya
+#     malumotlar['model'] = model
+#     return malumotlar
+# 
+# avto1 = avto_info('GM', 'malibu', rang = 'qora' , yil = 2018)
+# avto2 = avto_info('Kia', 'K5', rang = 'qizil' , narh = 35000 , yil = 2020 , korobka = 'avomat')
+# print(avto1 , avto2)
+# =============================================================================
