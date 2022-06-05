@@ -26,19 +26,21 @@
 # print(math.log2(8)) 
 # print(math.log10(100))
 # =============================================================================
-import random as r
-son = r.randint(0, 100) #random son tanlash
-print(son)
-ismlar = ['ali' , 'vali' , 'hasan' , 'husan']
-ism = r.choice(ismlar) #random qiymat tanlash
-print(ism)
-print(r.choice(ism)) #random harf tanlash
-
-x = list(range(0,51,5))
-print(x)
-print(r.choice(x)) #random qiymat tanlash
-
-x = list(range(11))
-print(x)
-r.shuffle(x) #sonlarni random aralashtirish
-print(x)
+# =============================================================================
+# import random as r
+# son = r.randint(0, 100) #random son tanlash
+# print(son)
+# ismlar = ['ali' , 'vali' , 'hasan' , 'husan']
+# ism = r.choice(ismlar) #random qiymat tanlash
+# print(ism)
+# print(r.choice(ism)) #random harf tanlash
+# 
+# x = list(range(0,51,5))
+# print(x)
+# print(r.choice(x)) #random qiymat tanlash
+# 
+# x = list(range(11))
+# print(x)
+# r.shuffle(x) #sonlarni random aralashtirish
+# print(x)
+# =============================================================================
