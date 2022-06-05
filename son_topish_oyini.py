@@ -16,7 +16,7 @@ while True:
 #2Часть
     savol = ()
     taxmin = ()
-    popitka = int()
+    popitka = int(0)
     savol1 = ()
     savol2 = ()
     taxmin2 = ()   
@@ -60,7 +60,14 @@ while True:
                 taxmin = r.randint(1, son - 1)
                 savol2 = input(f"Siz {taxmin} sonini o'yladingiz: to'g'ri (T), man o'ylagan son bundan kattaroq (+) , yoki kichikroq(-) ??")
                 savol = savol2[:]
-    print(popitka)
+    print(f"\nSoningizni {popitka} ta taxmin bilan topdim!")  
+    if popitkaa < popitka:
+        print(f"Siz {popitkaa} ta taxmin bilan toptiz va yuttingiz!")
+    elif popitkaa > popitka:
+        print(f"Siz {popitkaa} ta taxmin bilan toptiz va yutqazdingiz")
+    else:
+        print(f"Durrang! Ikkimiz ham {popitka} bilan topdik!")
     javob = int(input("yana oynaysimi? ha(1) yoq(0)"))
     if(javob == 0):
         break
+

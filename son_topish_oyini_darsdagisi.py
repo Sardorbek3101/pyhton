@@ -15,4 +15,3 @@ def sontop(x=10):
             break
     return taxminlar
     print(f"Tabriklaymiz. {taxminlar} ta taxmin bilan topdingiz!")
-
