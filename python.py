@@ -1,6 +1,6 @@
 #print(8/5)
 #i = ("8/5 = " , 8//5)
-
+# pop()
 #a = 5
 #b = 6
 #c = a * b
@@ -982,4 +982,3 @@
 # anor = list(filter(lambda meva:(meva.startswith('a') and meva.endswith('r')), mevalar))
 # print(anor)
 # =============================================================================
-    

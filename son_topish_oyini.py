@@ -1,7 +1,7 @@
 import random as r
 print("Keling o'ylagan sonni topish o'ynaymiz!")
 while True:
-    bot_oylagan_son = int(r.randint(1, 10))
+    bot_oylagan_son = int(r.randint(1, 1000))
     popitkaa = int(0)
     taxminn = int(input(f"1 dan {10} gacha son o'yladim topa olasizmi? : \n>>"))
     while True:
@@ -20,7 +20,7 @@ while True:
     savol1 = ()
     savol2 = ()
     taxmin2 = ()   
-    son = r.randint(1, 10)
+    son = r.randint(1, 1000)
     print("\n1 dan 10 gacha son o'ylang. Man topishga harakat qilaman")
     input("Son oylagan bo'lsangiz istalgan tugmani bosing.")
     while savol != 'T'.lower():
@@ -41,7 +41,7 @@ while True:
                     savol3 = input(f"Siz {taxmin2} sonini o'yladingiz: to'g'ri (T), man o'ylagan son bundan kattaroq (+) , yoki kichikroq(-) ??")
                     savol = savol3[:]
                 if (savol1 == '+' and savol2 == '+'):
-                    taxmin2 = r.randint(taxmin + 1, 10)
+                    taxmin2 = r.randint(taxmin + 1, 1000)
                     savol3 = input(f"Siz {taxmin2} sonini o'yladingiz: to'g'ri (T), man o'ylagan son bundan kattaroq (+) , yoki kichikroq(-) ??")
                     savol = savol3[:]
                 if popitka >= 3:
@@ -53,7 +53,7 @@ while True:
             savol1 = input(f"Siz {son} sonini o'yladingiz: to'g'ri (T), man o'ylagan son bundan kattaroq (+) , yoki kichikroq(-) ??")
             savol = savol1[:]
             if savol1 == '+':
-                taxmin = r.randint(son + 1, 10)
+                taxmin = r.randint(son + 1, 1000)
                 savol2 = input(f"Siz {taxmin} sonini o'yladingiz: to'g'ri (T), man o'ylagan son bundan kattaroq (+) , yoki kichikroq(-) ??")
                 savol = savol2[:]
             elif savol1 == '-':
