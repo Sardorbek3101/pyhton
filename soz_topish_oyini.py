@@ -1,8 +1,12 @@
 from uzwords import words
+from transliterate import to_latin
 import random as r
 
 def get_word():
     random_qiymat = r.choice(words)
+    while '-' in random_qiymat or ' ' in random_qiymat:
+        random_qiymat = r.choice(words)
+    random_qiymat = to_latin(random_qiymat)
     return random_qiymat.upper()
 
 
@@ -32,32 +36,50 @@ def play():
     while True:
         harflar = ('')
         soz = get_word()
-        soz_harfi = []
+        povtor_harf = (0)
         popitka = int(0)
         soz_uzunligi = len(soz)
-        for f in soz:
-            soz_harfi.append(f)
         main = display('' , soz)
         print(f"Man {soz_uzunligi} xonali so'z o'yladim topa olasizmi?")
         print(main)
         while True:
-            popitka += 1
-            harf = input("Harf kiriting: ").upper()
-            if harf in harflar:
-                print("Bu harfni avval kiritgan siz. Boshqa harf kiriting !")
+            if povtor_harf == False:
+                popitka += 1
             else:
-                harflar += harf
+                povtor_harf = (0)
+            if popitka >= 2:
+                harf = input("Agar to'liq sozni topgan bolsayz (+) ni bosing! \n1 ta harf kiriting: ").upper()
+            else:
+                harf = input("1 ta harf kiriting: ").upper()
+            if harf == '+':
+                harflar = ()
+                harflar = input("Topgan so'zingizni kiriting agar xato topgan bo'lsangiz yutqazgan bo'lasiz ! \n>>>")
+            elif len(harf) > 1:
+                print("1 ta dan ko'p harf kiritish mukin emas")
+            elif harf in harflar:
+                print("Bu harfni avval kiritgan siz. Boshqa harf kiriting !")
+                povtor_harf = 1
+            else:
+                harflar += harf+' '
                 if harf in soz:
                     print(f"{harf} harfi to'g'ri !")
                 else:
                     print("Bunday harf yo'q !")
-                pole_chudes = display(harflar , soz)
-            if '-' in pole_chudes:
+            pole_chudes = display(harflar , soz)
+            if harf == '+':
+                break
+            elif '-' in pole_chudes:
                 print(pole_chudes)
                 print(f"Shu vaqtgacha kiritgan harflaringiz: {harflar}")
             else:
-                break
-        print(f"Tabriklayman! {pole_chudes} so'zini {popitka} ta urinishda topdingiz !")
+                break    
+        if harf == '+':
+            if len(soz) != len(harflar):
+                print(f"Afsuski siz yutqazdindiz, bu so'z {soz} edi")
+            elif '-' in pole_chudes:
+                print(f"Afsuski siz yutqazdindiz, bu so'z {soz} edi")
+        else:
+            print(f"Tabriklayman! {pole_chudes} so'zini {popitka} ta urinishda topdingiz !")
         restart = int(input("Yana o'ynaysizmi? / ha(1) yoq(0)"))
         if restart == False:
             break
