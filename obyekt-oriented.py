@@ -226,3 +226,5 @@ salon1 + avto4
 print(salon1())
 print(salon3)
 print(salon3())
+
+get_info
